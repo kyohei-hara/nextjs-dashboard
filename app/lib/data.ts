@@ -8,7 +8,7 @@ import {
   Revenue,
 } from "./definitions";
 import { formatCurrency } from "./utils";
-import { unstable_noStore as noStore, unstable_noStore } from "next/cache";
+import { unstable_noStore as noStore } from "next/cache";
 
 const sql = postgres(process.env.POSTGRES_URL!, { ssl: "require" });
 
